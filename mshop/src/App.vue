@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-  <home/>
+    <Home></Home>
   </div>
 </template>
 
 <script>
-  import home from '@/views/Home.vue'
+  import Home from '@/views/home/Home.vue'
   export default {
     name:'App',
     components:{
-      home
+      Home
     }
   }
 </script>
 
-<style>
-
+<style scoped>
+@import "./assets/css/base.css";
 </style>
