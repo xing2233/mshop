@@ -1,15 +1,20 @@
 <template>
   <div id="app">
-    <Home></Home>
+    <router-view></router-view>
+    <div>
+      <MainTarBar></MainTarBar>
+    </div>
   </div>
 </template>
 
 <script>
   import Home from '@/views/home/Home.vue'
+  import MainTarBar from "@/components/content/MainTarBar";
   export default {
     name:'App',
     components:{
-      Home
+      Home,
+      MainTarBar
     }
   }
 </script>

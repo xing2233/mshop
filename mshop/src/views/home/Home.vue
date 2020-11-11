@@ -4,15 +4,16 @@
       <NavBar></NavBar>
     </div>
     <div>
-      <MainTarBar></MainTarBar>
+
     </div>
+
   </div>
 </template>
 
 <script>
 import NavBar from '@/components/content/NavBar.vue'
 import homeService from '@/services/homeService.js'
-import MainTarBar from "@/components/content/MainTarBar";
+
 
 export default {
   name: "Home",
@@ -23,7 +24,7 @@ export default {
   },
   components: {
     NavBar,
-    MainTarBar
+    // MainTarBar
   },
   created() {
     homeService.getBanner().then((res) => {
@@ -38,5 +39,7 @@ export default {
 .nav {
   background-color: var(--color-tint);
   color: var(--color-background);
+  /*阴影*/
+  box-shadow:0px 0px 5px rgba(100,100,100,1);
 }
 </style>

@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import TarBarComponent from "@/components/common/TarBarComponent";
-import TarBarItemComponent from "@/components/common/TarBarItemComponent";
+import TarBarComponent from "@/components/common/tabBar/TarBarComponent";
+import TarBarItemComponent from "@/components/common/tabBar/TarBarItemComponent";
 export default {
 name: "MainTarBar",
   components: {
