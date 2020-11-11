@@ -26,11 +26,11 @@ app.get('/',(req,res)=>{
     res.json('helloword')
 })
 
-app.get('/list',(req,res)=>{
+app.get('/get_banner',(req,res)=>{
     const list = [
-        {name:'test1'},
-        {name:'test2'},
-        {name:'test3'},
+        {pic:'https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/137293/24/14380/85913/5f9bebbaE227b1240/a8965f915b6124eb.jpg!q70.jpg.dpg'},
+        {pic:'https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/137293/24/14380/85913/5f9bebbaE227b1240/a8965f915b6124eb.jpg!q70.jpg.dpg'},
+        {pic:'https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/137293/24/14380/85913/5f9bebbaE227b1240/a8965f915b6124eb.jpg!q70.jpg.dpg'},
     ]
     res.json(list)
 })
