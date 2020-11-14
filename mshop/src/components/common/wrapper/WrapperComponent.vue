@@ -17,21 +17,21 @@
   export default {
     name: "WrapperComponent",
     props: {
-      banners: {
+      list: {
         required: true,
         type: [Object, Array]
       }
     },
     data() {
       return {
-        sliders: this.banners,
+        sliders: this.list,
         startX: 0,
         count: 0,
         len: 0,
         i: 1,
         isActive: 1,
         trans: '',
-        timeId:null
+        timeId: null
       }
     },
 
@@ -40,13 +40,11 @@
         const count = this.count = this.sliders.length;
         this.len = count - 2
       }
-
-    },
-    mounted(){
       this.doCreateTimer()
     },
+
     methods: {
-      doCreateTimer(){
+      doCreateTimer() {
         if (!this.timeId) {
           this.timeId = setInterval(() => {
             this.toRight()

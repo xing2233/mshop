@@ -56,3 +56,24 @@ app.get('/img', function (req, res, next) {
   const imgPath = req.query.path
   res.sendFile(path.join(__dirname, 'img/' + imgPath));
 })
+
+
+app.get('/get_recommend', (req, res) => {
+  const list = [
+    {'pic': 'http://localhost/img?path=lib.png', 'title': '京东超市'},
+    {'pic': 'http://localhost/img?path=lib.png', 'title': '数码电器'},
+    {'pic': 'http://localhost/img?path=lib.png', 'title': '京东服饰'},
+    {'pic': 'http://localhost/img?path=lib.png', 'title': '京东生鲜'},
+    {'pic': 'http://localhost/img?path=lib.png', 'title': '京东到家'},
+    {'pic': 'http://localhost/img?path=lib.png', 'title': '充值缴费'},
+    {'pic': 'http://localhost/img?path=lib.png', 'title': '9.9元拼'},
+    {'pic': 'http://localhost/img?path=lib.png', 'title': '领劵'},
+    {'pic': 'http://localhost/img?path=lib.png', 'title': '领金贴'},
+    {'pic': 'http://localhost/img?path=lib.png', 'title': 'PLUS会员'},
+  ]
+
+  returnModel.data = list
+
+  res.json(returnModel)
+
+})

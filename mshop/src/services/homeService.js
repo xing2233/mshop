@@ -7,6 +7,12 @@ export default {
     return requestHelper.request({
       url: config.api.url + 'get_banner'
     })
+  },
+
+  getRecommend:function () {
+    return requestHelper.request({
+      url: config.api.url + 'get_recommend'
+    })
   }
 }
 
