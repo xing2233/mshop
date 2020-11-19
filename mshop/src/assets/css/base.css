@@ -1,58 +1,60 @@
 @import "normalize.css";
 
 /*根设置*/
-:root{
-    --color-text:#666;
-    --color-hight-text:#ff5777;
-    --color-tint:#ff8198;
-    --color-background:#fff;
-    --font-size:14px;
-    --line-height:1.5;
+:root {
+  --color-text: #666;
+  --color-hight-text: #ff5777;
+  --color-tint: #ff8198;
+  --color-background: #fff;
+  --font-size: 14px;
+  --line-height: 1.5;
 }
 
-*,*::before,*::after{
-    padding: 0;
-    margin: 0;
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
 
-    /*让边框不占据宽度*/
-    box-sizing:border-box;
-    -moz-box-sizing:border-box; /* Firefox */
+  /*让边框不占据宽度*/
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* Firefox */
 }
 
-body{
-    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC','Hiragino Sans GB','Microsoft Yahei','微软雅黑',Arial,sans-serif;
-    user-select: none;
-    /*ios点击设置高亮块背景为透明*/
-    -webkit-tap-highlight-color:transparent;
-    background: var(--color-background);
-    color:var(--color-text);
-    width: 100vw;
+body {
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+  user-select: none;
+  /*ios点击设置高亮块背景为透明*/
+  -webkit-tap-highlight-color: transparent;
+  background: var(--color-background);
+  color: var(--color-text);
+  width: 100vw;
+  font-size: var(--font-size);
 }
 
-a{
-    color:var(--color-text);
-    /*去掉下划线*/
-    text-decoration: none;
+a {
+  color: var(--color-text);
+  /*去掉下划线*/
+  text-decoration: none;
 }
 
 /*清除浮动*/
-.clear-fix::after{
-    clear: both;
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    visibility: hidden;
-}
-.clear-fix{
-    /*ie下清除浮动，非ie保持元素比例*/
-    zoom: 1;
+.clear-fix::after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
 
-.left{
-    float: left;
+.clear-fix {
+  /*ie下清除浮动，非ie保持元素比例*/
+  zoom: 1;
 }
 
-.right{
-    float: right;
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }

@@ -60,16 +60,88 @@ app.get('/img', function (req, res, next) {
 
 app.get('/get_recommend', (req, res) => {
   const list = [
-    {'pic': 'http://localhost/img?path=lib.png', 'title': '京东超市'},
-    {'pic': 'http://localhost/img?path=lib.png', 'title': '数码电器'},
-    {'pic': 'http://localhost/img?path=lib.png', 'title': '京东服饰'},
-    {'pic': 'http://localhost/img?path=lib.png', 'title': '京东生鲜'},
-    {'pic': 'http://localhost/img?path=lib.png', 'title': '京东到家'},
-    {'pic': 'http://localhost/img?path=lib.png', 'title': '充值缴费'},
-    {'pic': 'http://localhost/img?path=lib.png', 'title': '9.9元拼'},
-    {'pic': 'http://localhost/img?path=lib.png', 'title': '领劵'},
-    {'pic': 'http://localhost/img?path=lib.png', 'title': '领金贴'},
-    {'pic': 'http://localhost/img?path=lib.png', 'title': 'PLUS会员'},
+    {'pic': 'http://localhost/img?path=lib1.png', 'title': '京东超市'},
+    {'pic': 'http://localhost/img?path=lib2.png', 'title': '数码电器'},
+    {'pic': 'http://localhost/img?path=lib3.png', 'title': '京东服饰'},
+    {'pic': 'http://localhost/img?path=lib4.png', 'title': '京东生鲜'},
+    {'pic': 'http://localhost/img?path=lib5.png', 'title': '京东到家'},
+    {'pic': 'http://localhost/img?path=lib6.png', 'title': '充值缴费'},
+    {'pic': 'http://localhost/img?path=lib7.png', 'title': '9.9元拼'},
+    {'pic': 'http://localhost/img?path=lib8.png', 'title': '领劵'},
+    {'pic': 'http://localhost/img?path=lib9.png', 'title': '领金贴'},
+    {'pic': 'http://localhost/img?path=lib10.png', 'title': 'PLUS会员'},
+  ]
+
+  returnModel.data = list
+
+  res.json(returnModel)
+
+})
+
+
+
+app.get('/get_tabs', (req, res) => {
+  const list = [
+    {
+      'id':1,
+      'pic': 'http://localhost/img?path=tab.jpg',
+      'title': '【送宝宝凳】【顺丰】皓冰 儿童床拼接实木男孩女孩婴儿床带护栏小孩床单人床加宽床拼接床 加厚 三面尾梯 150*70*40实木床（店长推荐）',
+      'price': '128.00'
+    },
+    {
+      'id':2,
+      'pic': 'http://localhost/img?path=tab.jpg',
+      'title': '【送宝宝凳】【顺丰】皓冰 儿童床拼接实木男孩女孩婴儿床带护栏小孩床单人床加宽床拼接床 加厚 三面尾梯 150*70*40实木床（店长推荐）',
+      'price': '128.00'
+    },
+    {
+      'id':3,
+      'pic': 'http://localhost/img?path=tab.jpg',
+      'title': '【送宝宝凳】【顺丰】皓冰 儿童床拼接实木男孩女孩婴儿床带护栏小孩床单人床加宽床拼接床 加厚 三面尾梯 150*70*40实木床（店长推荐）',
+      'price': '128.00'
+    },
+    {
+      'id':4,
+      'pic': 'http://localhost/img?path=tab.jpg',
+      'title': '【送宝宝凳】【顺丰】皓冰 儿童床拼接实木男孩女孩婴儿床带护栏小孩床单人床加宽床拼接床 加厚 三面尾梯 150*70*40实木床（店长推荐）',
+      'price': '128.00'
+    },
+    {
+      'id':5,
+      'pic': 'http://localhost/img?path=tab.jpg',
+      'title': '【送宝宝凳】【顺丰】皓冰 儿童床拼接实木男孩女孩婴儿床带护栏小孩床单人床加宽床拼接床 加厚 三面尾梯 150*70*40实木床（店长推荐）',
+      'price': '128.00'
+    },
+    {
+      'id':6,
+      'pic': 'http://localhost/img?path=tab.jpg',
+      'title': '【送宝宝凳】【顺丰】皓冰 儿童床拼接实木男孩女孩婴儿床带护栏小孩床单人床加宽床拼接床 加厚 三面尾梯 150*70*40实木床（店长推荐）',
+      'price': '128.00'
+    },
+    {
+      'id':7,
+      'pic': 'http://localhost/img?path=tab.jpg',
+      'title': '【送宝宝凳】【顺丰】皓冰 儿童床拼接实木男孩女孩婴儿床带护栏小孩床单人床加宽床拼接床 加厚 三面尾梯 150*70*40实木床（店长推荐）',
+      'price': '128.00'
+    },
+    {
+      'id':8,
+      'pic': 'http://localhost/img?path=tab.jpg',
+      'title': '【送宝宝凳】【顺丰】皓冰 儿童床拼接实木男孩女孩婴儿床带护栏小孩床单人床加宽床拼接床 加厚 三面尾梯 150*70*40实木床（店长推荐）',
+      'price': '128.00'
+    },
+    {
+      'id':9,
+      'pic': 'http://localhost/img?path=tab.jpg',
+      'title': '【送宝宝凳】【顺丰】皓冰 儿童床拼接实木男孩女孩婴儿床带护栏小孩床单人床加宽床拼接床 加厚 三面尾梯 150*70*40实木床（店长推荐）',
+      'price': '128.00'
+    },
+    {
+      'id':10,
+      'pic': 'http://localhost/img?path=tab.jpg',
+      'title': '【送宝宝凳】【顺丰】皓冰 儿童床拼接实木男孩女孩婴儿床带护栏小孩床单人床加宽床拼接床 加厚 三面尾梯 150*70*40实木床（店长推荐）',
+      'price': '128.00'
+    },
   ]
 
   returnModel.data = list

@@ -9,9 +9,15 @@ export default {
     })
   },
 
-  getRecommend:function () {
+  getRecommend: function () {
     return requestHelper.request({
       url: config.api.url + 'get_recommend'
+    })
+  },
+
+  getTabs: function () {
+    return requestHelper.request({
+      url: config.api.url + 'get_tabs'
     })
   }
 }
